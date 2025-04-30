@@ -99,8 +99,8 @@ client.on('message', async (msg) => {
     console.log(`Mensagem recebida de ${msg.from}: ${msg.body}`);
 
     // Exemplo: Responder automaticamente
-    if (msg.body.toLowerCase() === 'oi') {
-        await client.sendMessage(msg.from, 'Olá! Como posso ajudar?');
+    if (msg.from === '553491094313-1580764955@g.us' && msg.body.toLowerCase() === 'oi') {
+        await client.sendMessage(msg.from, 'GET A LIFE');
     }
 });
 
